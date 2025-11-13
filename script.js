@@ -61,25 +61,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Form Submission Handler
-const contactForm = document.querySelector('.contact-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        // Here you would typically send the form data to a server
-        // For now, we'll just show an alert
-        alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon at ${email}.`);
-        
-        // Clear form
-        contactForm.reset();
-    });
-}
 
 // Animate skill progress bars on scroll
 const observerOptions = {
